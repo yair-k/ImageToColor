@@ -6,5 +6,5 @@ A webtool where you upload an image and it scans and analize the image to output
 
 
 
-Try It Out: [cooler-palette](https://ImageToColor.netlify.app)
+Try It Out: [ImageToColor](https://ImageToColor.netlify.app)
 
