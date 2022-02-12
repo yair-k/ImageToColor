@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="favicon.png"/>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/main.min.css">
+    <title>ImageToColor</title>
+</head>
+<body>  
+  <div class="wrapper">
+    </a>
+
+    <div class="header">
+        ImageToColor
+        <div class="hr"> </div>
+    </div>
+
+    <div class="main-container">
+      <div class="input-container">
+        <h2 class="title">Find the color from the image</h2>
+        <p class="description">Upload any image, click the button and ImageToColor will analize and find the average color hex's within the image. Supported file types: .jpeg, .gif, .png, .jpg</p>
+        <div class="cta-container">
+          <input type="file" id="file" tabindex="-1" accept=".jpeg,.gif,.jpg,.png,image/jpeg,image/png" onchange="uploadImgUrl(event)">
+          <button class="upload">
+            <label for="file" style="cursor: pointer;">Upload Image</label>
+          </button>
+          <button onclick="generateRandomly()">Generate randomly</button>
+        </div>
+      </div>
+
+      <div class="preview-container">
+        <div class="preview">
+            <img id="previewImg" crossorigin="anonymous" alt="Preview " src="https://picsum.photos/600/450">
+        </div>
+        <div class="palette">
+          <span class="color fas fa-copy"></span>
+          <span class="color fas fa-copy"></span>
+          <span class="color fas fa-copy"></span>
+          <span class="color fas fa-copy"></span>
+        </div>
+        <div class="info">
+          <div class="code">
+            <span class="name">color1</span>
+            <span class="number">#000000</span>
+          </div>
+          <div class="code">
+            <span class="name">color2</span>
+            <span class="number">#000000</span>
+          </div>
+          <div class="code">
+            <span class="name">color3</span>
+            <span class="number">#000000</span>
+          </div>
+          <div class="code">
+            <span class="name">color4</span>
+            <span class="number">#000000</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+        <div class="hr"></div>
+        <div class="copyright">made by yair</div>
+        <div class="social-media">
+          <a href="https://yair.ca" target="_blank">Website</a>
+        </div>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="https://chir.ag/projects/ntc/ntc.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/color-thief/2.3.0/color-thief.umd.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+</html>
